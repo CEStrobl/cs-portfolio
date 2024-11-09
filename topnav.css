@@ -1,0 +1,50 @@
+.topnav{
+	display:flex;
+	justify-content: center;
+
+	padding: 30px 50px;
+	
+
+}
+
+.topnav-brand{
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 22px;
+
+	display:flex;
+	justify-content: center;
+    align-items: center;
+
+	color:var(--brand);
+
+	border: 1px solid var(--brand);
+	border-radius: 30px;
+
+	padding: 12px;
+}
+
+.center{
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+
+	width: 600px;
+	
+}
+
+.topnav a {text-decoration: none;}
+
+.topnav-button{
+	
+	padding: 10px 20px;
+	border-radius: 8px;
+	background-color: var(--accent1);
+	color:white;
+	transition: 0.2s ease-in-out;
+}
+
+
+.topnav-button:hover{
+	background-color: var(--accent1hov);
+	color:rgb(255, 255, 255);
+}
