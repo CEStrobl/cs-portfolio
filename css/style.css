@@ -159,6 +159,7 @@ li {
     transition: 0.2s ease-in-out;
     border-radius: 8px;
     text-align: center;
+	text-decoration: none;
 }
 
 .button:hover {
@@ -290,4 +291,9 @@ li {
 	height: 75%; /* Shortened the fade effect */
 	background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
 
+}
+
+
+a button{
+	margin:0
 }
