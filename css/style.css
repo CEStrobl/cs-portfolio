@@ -3,12 +3,21 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background: linear-gradient(to bottom, #f3f4f6, #ffffff);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 :root {
-    --brand: #1E432F;
     --accent1: #1E432F;
     --accent1hov: #517537;
+    --accent2: #D4FB52;
+}
+
+a{
+	text-decoration: none;
+	color:unset;
 }
 
 h1 {
@@ -43,6 +52,7 @@ p {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 900px;
 }
 
 
@@ -159,7 +169,6 @@ li {
     transition: 0.2s ease-in-out;
     border-radius: 8px;
     text-align: center;
-	text-decoration: none;
 }
 
 .button:hover {
@@ -181,7 +190,7 @@ li {
     margin: 20px;
     background-color: #ffffff; /* Optional: light background for contrast */
     border-radius: 8px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
 	transition: 0.2s ease-in-out;
 
