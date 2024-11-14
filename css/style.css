@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 :root {
@@ -53,6 +54,7 @@ p {
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 900px;
+    box-sizing: border-box;
 }
 
 
@@ -305,4 +307,34 @@ li {
 
 a button{
 	margin:0
+}
+
+
+/* Screen Size Adjustments */
+
+@media only screen and (max-width: 980px) {
+    .block{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    body{
+        zoom: 75%;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .pannel{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    body{
+        zoom: 65%;
+    }
 }

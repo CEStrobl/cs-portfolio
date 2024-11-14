@@ -5,8 +5,10 @@
     background-color: #ffffff;
     padding: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: 97%;
+    width: 100%;
+    box-sizing: border-box;
 }
+
 
 .topnav-brand {
     font-family: 'Courier New', Courier, monospace;
@@ -49,3 +51,12 @@
     background-color: var(--accent1hov);
     color: rgb(255, 255, 255);
 }
+
+
+@media only screen and (max-width: 500px) {
+    .topnav-button{
+       padding: 10px 15px;
+       font-size: 14px;
+    }
+}
+
