@@ -1,0 +1,31 @@
+h1 {
+	position: relative;
+	display: inline-block;
+	font-size: 2.5em;
+	font-weight: bold;
+	color: black; /* Text color */
+	text-align: center; /* Default to center alignment */
+  }
+  
+  h1.left-align {
+	text-align: left; /* Apply left alignment to specific h1 */
+  }
+  
+  h1::before {
+	content: '';
+	position: absolute;
+	top: 50%; /* Place the streak in the middle of the text */
+	width: 80%; /* Adjust the width of the streak */
+	height: 6px; /* Thickness of the highlight */
+	background-color: yellow; /* Highlight color */
+	transform: translateY(-50%); /* Center the streak vertically behind the text */
+	border-radius: 3px; /* Optional, rounded edges for the highlight */
+	z-index: -1; /* Ensure the streak stays behind the text */
+	left: 10%; /* For centered h1, start the streak from 10% */
+  }
+  
+  h1.left-align::before {
+	left: 0; /* For left-aligned h1, start the streak from the left edge */
+	width: 100%; /* Make the streak the same width as the text */
+  }
+  
