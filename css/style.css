@@ -6,14 +6,15 @@ body {
 }
 
 :root {
-    --brand: darkgreen;
-    --accent1: darkgreen;
-    --accent1hov: rgb(48, 139, 48);
+    --brand: #1E432F;
+    --accent1: #1E432F;
+    --accent1hov: #517537;
 }
 
 h1 {
 	font-family: "Anonymous Pro", monospace;
 	font-weight: 200;
+	color: var(--accent1);
 }
 
 /* Layout Helpers */
@@ -98,7 +99,7 @@ img {
 
 /* Hover effect with slight scaling and color change */
 .app:hover {
-    border-color: var(--accent1);
+    border-color: var(--accent1hov);
     filter: grayscale(0%);
     background-color: rgba(34, 139, 34, 0.15); /* Light greenish background on hover */
     transform: scale(1.1); /* Slight scale effect */
@@ -148,7 +149,7 @@ li {
 
 /* Buttons */
 .button {
-    border: 2px solid var(--accent1hov);
+	border: none;
     background-color: var(--accent1);
     color: white;
     font-size: 18px;
