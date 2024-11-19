@@ -249,10 +249,6 @@ li {
 	width: 220px;
 }
 
-.project-card:hover {
-    transform: scale(1.05);
-}
-
 .project-card img {
     width: 180px; 
     height: 180px;
