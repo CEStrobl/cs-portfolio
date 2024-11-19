@@ -16,10 +16,20 @@ body {
     --accent2: #D4FB52;
 }
 
+.link {
+    text-decoration:  underline;
+    color:  #068f0b;
+}
+
+.link:hover{
+    color:  #40aa3a;
+}
+
 a{
 	text-decoration: none;
 	color:unset;
 }
+
 
 h1 {
 	font-family: "Anonymous Pro", monospace;
@@ -71,6 +81,18 @@ img {
     object-fit: cover;
 }
 
+.wide-img{
+    height: unset;
+    width: 70%;
+}
+
+.img-caption{
+    font-size: 14px;
+    color: gray;
+    width: 70%;
+}
+
+
 .me {
 	width: 200px;
 	height: 200px;
@@ -81,6 +103,26 @@ img {
 .jobicon {
     box-shadow: 0px 0px 15px #aaaaaaac;
 }
+
+/* Code */
+
+/* Style for code tag */
+code {
+    font-family: "Anonymous Pro", monospace;
+    background-color: #d4dfd43b; 
+    color: #068f0b; 
+    font-weight: 600;
+    padding: 2px 4px; 
+    border-radius: 4px; 
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.wide-code{
+    width: 60%;
+    padding: 15px;
+}
+
 
 /* Bio Section */
 .bio {
@@ -175,6 +217,14 @@ li {
 
 .button:hover {
     background-color: var(--accent1hov);
+}
+
+.small {
+    font-size: 14px;
+    width: 120px;
+    padding: 10px;
+    margin: 15px;
+    margin-left: 0px;
 }
 
 /* Project Cards */
@@ -308,6 +358,7 @@ li {
 a button{
 	margin:0
 }
+
 
 
 /* Screen Size Adjustments */
