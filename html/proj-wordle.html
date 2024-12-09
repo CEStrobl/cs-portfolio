@@ -29,67 +29,51 @@
 	</div>
 
 	<div class="block column">
-		<h1>Python Web Scraper</h1>
+		<h1>Shell Wordle Helper</h1>
 		<div class="row" style="align-items: center;">
-			<img src="../img/webscraping2.png" alt="Python Web Scraper Image">
+			<img src="../img/wordle-square.png" alt="">
 			<div class="project-info">
 				<p><b>Class:</b> CSCI 301 - Survey of Scripting Languages</p>
 				<p><b>Grade:</b> 100/100</p>
-				<p><b>Language(s):</b> Python</p>
+				<p><b>Language(s):</b> Shell</p>
 			</div>
 		</div>
 	
 		<h2>About the Project</h2>
 		<p>
-			This project is a Python-based web scraper that extracts job information from a website, 
-			including job titles, companies, and locations. It demonstrates how programming skills 
-			can be used to automate data retrieval and streamline job searching, using Python 
-			libraries like BeautifulSoup for parsing and structuring data.
+			This Wordle Helper project, written in shell scripting, assists players in narrowing 
+			down possible Wordle answers based on past guesses. By processing a word list through 
+			regular expressions, it eliminates invalid options and refines potential solutions with 
+			each round of input.
 		</p>
 		<p>
-			The scraper loops through job postings, retrieves elements by ID, and filters jobs based 
-			on keywords like "Python." Key functions include <code>loopJobs()</code>, which displays job details, 
-			<code>findByID()</code> for specific element retrieval, and <code>findByParent()</code>, which filters job listings 
-			and displays application links.
+			The script uses user-provided feedback from Wordle guesses, including correct, misplaced, 
+			and rejected letters, to generate matching words dynamically. It builds complex filters 
+			to exclude or include specific characters and positions efficiently.
 		</p>
 		<p>
-			Job information is output directly to the command line, allowing users to easily analyze 
-			the data. For example, filtering Python jobs will display relevant job listings with 
-			application links, as shown in Fig. 1: Filtered Job Results.
+			With each iteration, the helper reduces the list of possibilities, guiding players 
+			toward the correct answer. This tool demonstrates the practical application of regex 
+			in solving real-world puzzles.
 		</p>
 	
-		<img class="wide-img" src="../img/wide-python.png" alt="Example output of the Python web scraper">
-		<div class="img-caption">Fig. 1: Filtered Job Results</div>
-		<br>
-		<p>
-			This project was inspired by the 
-			<a href="https://realpython.com/beautiful-soup-web-scraper-python/" class="link">
-				Real Python tutorial
-			</a>, 
-			which provided a solid foundation for learning web scraping with BeautifulSoup.
-		</p>
+		<img class="wide-img" src="../img/wordle-wide.png" alt="">
+		<div class="img-caption">Fig. 1: List Results</div>
 		<br>
 		<br>
 
 		<h2>How to Run</h2>
 
 		<p>
-			By default, the program scrapes listings from <code>realpython.github.io/fake-jobs/</code>. 
-		</p>
-		<p>
-			If you wish to scrape job data from a different website, modify the URL variable in the script:
-		</p>
-		<code class="wide-code">URL = "https://your-choice-of-website.com"</code>
-
-		<p>
-			To run the web scraper, execute the Python script using the following command:
+			To run the script, execute the following command into a Linux terminal:
 		</p>
 
-		<code class="wide-code">python3 Webscraping.py</code>
+		<code class="wide-code">./wordle.sh</code>
 
 		<p>
-			Once the script is executed, the program will scrape job listings (or data from any other website you set) and output the results in the command line interface.
-			The program will display job titles, company names, and locations of relevant job postings, or any other data your modified URL returns.
+			To run the Wordle Helper, use a shell with Wordle.txt containing potential answers. 
+			Enter the provided grep commands in the file, updating them with feedback from your guesses. 
+			The script filters the word list, narrowing options until the correct answer is found.
 		</p>
 
 		<br>
@@ -100,7 +84,7 @@
 			To access the project's source code, please request access via email. Upon approval, a link to the GitHub repository will be provided. Explore the code to see the project's full functionality.
 		</p>
 
-		<a href="https://github.com/CEStrobl/CSCI-301-code-repository/blob/master/lab08/Webscraping.py" class="button">Access Repository</a>
+		<a href="https://github.com/CEStrobl/CSCI-301-code-repository/blob/master/lab02/lab02.sh" class="button">Access Repository</a>
 	</div>
 	
 
