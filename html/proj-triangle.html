@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/topnav.css">
+	<link rel="stylesheet" href="../css/footer.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+
+	<link rel="shortcut icon" href="../img/CS.png" type="image/x-icon">
+	
+	<title>CS Portfolio</title>
+</head>
+<body>
+
+	<div class="topnav">
+		<div class="center">
+			<a class="topnav-brand" href="../index.html">CS</a>
+			<a class="topnav-button" href="resume.html">Resume</a>
+			<a class="topnav-button" href="projects.html">Projects</a>
+			<a class="topnav-button" href="writing.html">Writing</a>
+			<a class="topnav-button" href="presentations.html">Presentations</a>
+		</div>
+	</div>
+
+	<div class="block column">
+		<h1>Python Web Scraper</h1>
+		<div class="row" style="align-items: center;">
+			<img src="../img/webscraping2.png" alt="Python Web Scraper Image">
+			<div class="project-info">
+				<p><b>Class:</b> CSCI 301 - Survey of Scripting Languages</p>
+				<p><b>Grade:</b> 100/100</p>
+				<p><b>Language(s):</b> Python</p>
+			</div>
+		</div>
+	
+		<h2>About the Project</h2>
+		<p>
+			This project is a Python-based web scraper that extracts job information from a website, 
+			including job titles, companies, and locations. It demonstrates how programming skills 
+			can be used to automate data retrieval and streamline job searching, using Python 
+			libraries like BeautifulSoup for parsing and structuring data.
+		</p>
+		<p>
+			The scraper loops through job postings, retrieves elements by ID, and filters jobs based 
+			on keywords like "Python." Key functions include <code>loopJobs()</code>, which displays job details, 
+			<code>findByID()</code> for specific element retrieval, and <code>findByParent()</code>, which filters job listings 
+			and displays application links.
+		</p>
+		<p>
+			Job information is output directly to the command line, allowing users to easily analyze 
+			the data. For example, filtering Python jobs will display relevant job listings with 
+			application links, as shown in Fig. 1: Filtered Job Results.
+		</p>
+	
+		<img class="wide-img" src="../img/wide-python.png" alt="Example output of the Python web scraper">
+		<div class="img-caption">Fig. 1: Filtered Job Results</div>
+		<br>
+		<p>
+			This project was inspired by the 
+			<a href="https://realpython.com/beautiful-soup-web-scraper-python/" class="link">
+				Real Python tutorial
+			</a>, 
+			which provided a solid foundation for learning web scraping with BeautifulSoup.
+		</p>
+		<br>
+		<br>
+
+		<h2>How to Run</h2>
+
+		<p>
+			By default, the program scrapes listings from <code>realpython.github.io/fake-jobs/</code>. 
+		</p>
+		<p>
+			If you wish to scrape job data from a different website, modify the URL variable in the script:
+		</p>
+		<code class="wide-code">URL = "https://your-choice-of-website.com"</code>
+
+		<p>
+			To run the web scraper, execute the Python script using the following command:
+		</p>
+
+		<code class="wide-code">python3 Webscraping.py</code>
+
+		<p>
+			Once the script is executed, the program will scrape job listings (or data from any other website you set) and output the results in the command line interface.
+			The program will display job titles, company names, and locations of relevant job postings, or any other data your modified URL returns.
+		</p>
+
+		<br>
+
+		<h2>Repository Information</h2>
+
+		<p>
+			To access the project's source code, please request access via email. Upon approval, a link to the GitHub repository will be provided. Explore the code to see the project's full functionality.
+		</p>
+
+		<a href="https://github.com/CEStrobl/CSCI-301-code-repository/blob/master/lab08/Webscraping.py" class="button">Access Repository</a>
+	</div>
+	
+
+	<footer>
+		<div class="footer-content">
+
+			<p class="footer-text">
+				CSCI 496 - In partial fulfillment for the degree of Bachelor of Science in Cybersecurity Major (class of 2024)
+			</p>
+			<nav class="footer-nav">
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="writing.html">Writing</a></li>
+					<li><a href="presentations.html">Presentations</a></li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+</body>
+</html>
